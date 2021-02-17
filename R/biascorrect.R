@@ -46,12 +46,12 @@ biascorrect <- function(phi=NULL,n=NULL, method=c("yw","mle","burg","cmle"),orde
     {
     # compute n from length
     n <- length(x)
+  }
 
-    # add default method
-    if(length(method)>1)
-      print("default method: MLE")
-      method <- "mle"
-    }
+  # add default method
+  if(length(method)>1)
+    print("default method: MLE")
+  method <- "mle"
 
   # check for common errors
   print_errors(phi,n,method,order,x)

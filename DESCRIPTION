@@ -1,7 +1,7 @@
 Package: ARbiascorrect
 Type: Package
 Title: AR Bias Correction for short time series
-Version: 0.1.0
+Version: 1.0.0
 Author: Sigrunn H. Sørbye, Pedro. G. Nicolau & Håvard Rue
 Maintainer: P. G Nicolau <pedro.nicolau@uit.no>
 Description: Gives bias-corrected estimates and 95% confidence intervals for autoregressive coefficients of AR(1) and AR(2) processes, for sample sizes n=10,11, ..., 50.
