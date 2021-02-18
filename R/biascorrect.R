@@ -32,11 +32,8 @@
 #' series <- arima.sim(n = 20, list(ar = c(0.2, 0.5), sd = sqrt(0.04)))
 #' biascorrect(x=series, order=2, method="mle")
 #' }
-#'
-#' @references
-#' Sørbye, S. H., Nicolau, P. G. & Rue, H. (2021). Finite-sample properties of estimators for first
-#' and second order autoregressive processes.
-#'
+#' @references Sørbye, S. H., Nicolau, P. G. & Rue, H. (2020). Finite sample properties
+#' of estimators for first and second order autoregressive processes.
 #' @export
 biascorrect <- function(phi=NULL,n=NULL, method=c("yw","mle","burg","cmle"),order=NULL, x=NULL)
 {
@@ -46,7 +43,7 @@ biascorrect <- function(phi=NULL,n=NULL, method=c("yw","mle","burg","cmle"),orde
 
   # if time series is provided
   if(is.null(x)==FALSE)
-    {
+  {
     # compute n from length
     n <- length(x)
   }
@@ -75,4 +72,5 @@ biascorrect <- function(phi=NULL,n=NULL, method=c("yw","mle","burg","cmle"),orde
   return(result)
 
 }
+
 
