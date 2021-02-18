@@ -54,6 +54,6 @@ biascorrect(x=series, order=2, method="mle")
 }
 }
 \references{
-Sørbye, S. H., Nicolau, P. G. & Rue, Håvard (2020). Model-based bias correction for short AR(1) and AR(2)
-processes.
+Sørbye, S. H., Nicolau, P. G. & Rue, H. (2021). Finite-sample properties of estimators for first
+and second order autoregressive processes.
 }
